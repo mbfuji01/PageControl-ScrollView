@@ -30,7 +30,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
+    
+//    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+//        /*
+//         <scheme>://<host>
+//         starbucks://home
+//         starbucks://scan
+//         */
+//        
+//        // Process the URL.
+//        guard let components = NSURLComponents(url: url, resolvingAgainstBaseURL: true),
+//              let host = components.host else {
+//                  print("Invalid URL")
+//                  return false
+//              }
+//        
+//        print("components: \(components)")
+//        
+//        // Create the deep link
+//        guard let deepLink = DeepLink(rawValue: host) else {
+//            print("Deeplink not found: \(host)")
+//            return false
+//        }
+//        
+//        // Hand off to PageViewController
+//        PageViewController.handleDeepLink(deepLink)
+//        
+//        return true
+//    }
+    
 
 }
 
